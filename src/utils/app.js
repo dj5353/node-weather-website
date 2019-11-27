@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express();
+const port = process.env.PORT || 8000
 const hbs = require('hbs');
 const geocode = require('./geocoding.js')
 const forecast = require('./forecast.js')
@@ -71,6 +72,10 @@ app.get('*',(req,res) => {
 
 
 
-app.listen(8000,() => {
-    console.log("Port has been started at port number 8000")
+// app.listen(8000,() => {
+//     console.log("Port has been started at port number 8000")
+// })
+
+app.listen(PORT,() => {
+    console.log("WELCOME to the website")
 })
