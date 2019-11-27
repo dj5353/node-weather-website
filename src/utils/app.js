@@ -76,6 +76,6 @@ app.get('*',(req,res) => {
 //     console.log("Port has been started at port number 8000")
 // })
 
-app.listen(PORT,() => {
+app.listen(port,() => {
     console.log("WELCOME to the website")
 })
