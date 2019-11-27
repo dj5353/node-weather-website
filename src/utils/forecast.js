@@ -15,7 +15,7 @@ const fore = (long,lat,callback) =>{
         }
         else{
             return callback(undefined,
-                `The place is in  ${ body.timezone } currently having temperature ${ Math.round(body.currently.temperature) } having windspeed ${ body.currently.windspeed} the day will be ${ body.currently.summary }`
+                `The place is in  ${ body.timezone } currently having temperature ${ Math.round(body.currently.temperature) } having windspeed ${ body.currently.windSpeed} the day will be ${ body.currently.summary }`
             )
         }
     })
